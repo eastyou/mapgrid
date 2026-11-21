@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mapgrid"
+version = "0.1.0"
+description = "经纬网练习纸：可配置经纬范围、坐标题与答案页"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["geography", "coordinates", "classroom", "printable", "teacher", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+mapgrid = "mapgrid.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/mapgrid"
+Source = "https://github.com/eastyou/mapgrid"
+
+[tool.setuptools]
+packages = ["mapgrid"]
